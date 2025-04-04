@@ -1,0 +1,16 @@
+{
+  "name": "taller-4",
+  "version": "1.0.0",
+  "description": "taller4",
+  "main": "taller-04.js",
+  "scripts": {
+    "test": "node taller-04",
+    "dev": "nodemon"
+  },
+  "author": "Gaco",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.9"
+  }
+}

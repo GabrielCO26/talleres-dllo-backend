@@ -1,0 +1,38 @@
+@URL = http://localhost:5000
+
+### Punto 1
+@hobby = programar
+GET {{URL}}/users/hobby?hobby={{hobby}}
+
+### Punto 2
+@user_code = 200181392
+GET {{URL}}/users/exists/{{user_code}}
+
+### Punto 3
+GET {{URL}}/users/hobby/count?hobby={{hobby}}
+
+### Punto 4
+GET {{URL}}/users/is-free
+
+### Punto 5
+PUT {{URL}}/users/suggest
+Content-Type: application/json
+
+{
+    "codigo": "200154252",
+    "hobby": "tiktok"
+}
+
+### Punto 6
+POST {{URL}}/users
+Content-Type: application/json
+
+{
+    "codigo": "200171902",
+    "nombre": "Edison",
+    "apellido": "Pacheco",
+    "hobbies": ["estudiar", "carnavalear", "ir a cine"]
+}
+
+### Test endpoint
+GET {{URL}}/users/getAll
