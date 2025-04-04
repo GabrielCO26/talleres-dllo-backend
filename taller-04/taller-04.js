@@ -2,7 +2,6 @@ const express =  require("express")
 const app = express()
 const usuarios = require("./24-taller-04-datos.json")
 app.use(express.json())
-//holaaa
 
 //
 function filtrar_hobby(hobby){
